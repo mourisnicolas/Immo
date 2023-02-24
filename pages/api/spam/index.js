@@ -23,6 +23,11 @@ export default async function handler(req, res) {
     case 'POST':
       try {
 
+        let p = await Spam.findOne({ email: body.email });
+        if(p) {
+          return res.status(201).send("k k");
+        }
+        
         let spam = new Spam(body);
         await spam.save();
 
