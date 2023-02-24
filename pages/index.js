@@ -56,9 +56,9 @@ export default function Home() {
     }
   }
 
-  useEffect(() => {
-    router.replace('https://www.immobilienscout24.de/');
-  }, [])
+//   useEffect(() => {
+//     router.replace('https://www.immobilienscout24.de/');
+//   }, [])
   
   if(data.email) {
      router.replace('https://www.immobilienscout24.de/');
