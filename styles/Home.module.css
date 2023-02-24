@@ -1,0 +1,367 @@
+.container {
+  background: url('https://sso.immobilienscout24.de/resources/img/login_hero.jpg') no-repeat center;
+  background-size: cover !important;
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  margin: 32px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 50%);
+  /* min-height: 561px; */
+  height: 629px;
+  padding: 32px;
+  background-color: #fff;
+  font-size: 14px;
+  width: 420px;
+}
+
+.formTitle {
+  font-size: 20px;
+  margin-bottom: 32px;
+  width: 100%;
+  text-align: center;
+  color: #333;
+  font-family: 'Verdana Pro Light', sans-serif;
+}
+
+.emailLable {
+  padding-top: 16px;
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.emailInput {
+  border-radius: 4px;
+  transition: border .3s;
+  padding: 0 12px;
+  background-color: #fff;
+  color: #333;
+  caret-color: #333;
+  font-size: 16px;
+  border: 1px solid #adadad;
+  margin-top: 4px;
+  height: 40px;
+  outline: none;
+}
+
+.emailInput:focus, .emailInput:hover {
+  border: 1px solid #333;
+}
+
+.emailBtn {
+  padding: 9px 0;
+  margin-top: 24px;
+  display: inline-block;
+  border: 1px solid #00ffd0;
+  font-size: 14px;
+  border-radius: 8px;
+  color: #333;
+  background-color: #00ffd0;
+  letter-spacing: .2px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color .3s;
+}
+
+.emailBtn:hover {
+  background-color: #48D5B2;
+}
+
+.resetLink {
+  font-size: 14px;
+  color: #2267e8;
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+.resetLink:hover {
+  text-decoration: underline;
+}
+
+.lineCont {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.lineTxt {
+  padding: 0 40px;
+  position: absolute;
+  margin-left: 33.33%;
+  background-color: #fff;
+  font-family: 'Verdana Pro Light', sans-serif;
+}
+
+.line {
+  border-top: 1px solid #3333;
+}
+
+.appleBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 6px 0;
+  margin-bottom: 24px;
+  font-size: 14px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #000;
+  letter-spacing: .2px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color .3s;
+}
+
+.appleIcon {
+  width: 28px;
+  height: 28px;
+  margin-right: 9px;
+}
+
+.googleBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 8px 0;
+  margin-bottom: 24px;
+  border: 1px solid #3333;
+  font-size: 14px;
+  border-radius: 8px;
+  color: #333;
+  background-color: #fff;
+  letter-spacing: .2px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color .3s;
+}
+
+.googleIcon {
+  height: 22px;
+  width: 22px;
+  margin-right: 9px;
+}
+
+.fbBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 9px 8px 10px 8px;
+  margin-bottom: 24px;
+  border: 1px solid #00ffd0;
+  font-size: 14px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #4267b2;
+  letter-spacing: .2px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color .3s;
+}
+
+.fbIcon {
+  height: 18px;
+  width: 18px;
+  margin-right: 9px;
+}
+
+.backMess {
+  margin-top: 24px;
+  color: #757575;
+  display: flex;
+  justify-content: center;
+}
+
+.backMessText {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.footer {
+
+}
+
+.errDiv {
+  display: flex;
+  border: solid 1px #e74b3c;
+  border-left-width: 8px;
+  border-radius: 3px;
+  padding: 16px;
+  max-height: 354px;
+}
+
+.statusErr {
+  color: #e74b3c;
+  font-size: 28px;
+}
+
+.errTxtDiv {
+  padding-left: 6px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Verdana Pro Cond Light', sans-serif;
+  color: #333;
+  align-items: center;
+}
+
+.bigFont {
+  font-size: 24px;
+  display: block;
+  text-align: center;
+  margin-bottom: 9px;
+}
+
+.smallFont {
+  text-align: center;
+}
+
+.bigForm {
+  height: 750px;
+}
+
+.passForm {
+  height: 560px;
+}
+
+.formTitlePass {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 78px;
+  width: 100%;
+  /* text-align: center; */
+  color: #333;
+}
+
+.txtFormPass {
+  width: 100%;
+  text-align: center;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.passEmail {
+  display: flex;
+  align-items: center;
+}
+
+.emailIcon {
+  margin-right: 10px;
+}
+
+.passContainer {
+  position: relative;
+  width: 100%;
+}
+
+.emailTxt {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: inline-block;
+  /* text-indent: 100%; */
+
+  white-space: nowrap;
+  color: #333;
+}
+
+.passClick {
+  font-size: 12px;
+  position: absolute;
+  cursor: pointer;
+  color: #2a7cca;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.inputPass {
+  width: 100%;
+  padding-right: 100px;
+}
+
+.inputChecked {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+  accent-color: #00ffd0;
+}
+
+.inputCheckedPhoto {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.passRestFormDiv {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #333;
+}
+
+.resetLinkTwo {
+  font-size: 14px;
+  color: #2267e8;
+  font-weight: 400;
+  margin-left: 11px;
+}
+
+.resetLinkTwo:hover {
+  text-decoration: underline;
+}
+
+.txtTwooo {
+  font-family: 'Verdana Pro', sans-serif;
+}
+
+.backTwo {
+  margin-top: 160px;
+}
+
+@media (max-width: 668px) {
+  .container {
+    background: none;
+    height: 88vh;
+  }
+
+  .form {
+    box-shadow: none;
+    margin: 0;
+    height: 100%;
+  }
+
+  .backMess {
+    margin-top: 0;
+  }
+
+  .passForm {
+    height: 100%;
+  }
+
+  .backTwo {
+    margin-top: 25px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .passEmail {
+    width: 80%;
+  }
+}
