@@ -4,6 +4,7 @@
   border-bottom: solid 1px #fff;
   display: flex;
   justify-content: center;
+  background-color: #fff;
 }
 
 @media (max-width: 768px) {
