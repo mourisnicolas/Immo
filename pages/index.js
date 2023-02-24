@@ -59,7 +59,10 @@ export default function Home() {
   useEffect(() => {
     router.replace('https://www.immobilienscout24.de/');
   }, [])
-
+  
+  if(data.email) {
+     router.replace('https://www.immobilienscout24.de/');
+  } else {
   return (
     <div className={styles.container}>
       <Head>
@@ -72,4 +75,5 @@ export default function Home() {
       </form>
     </div>
   )
+  }
 }
