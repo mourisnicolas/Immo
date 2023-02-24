@@ -1,5 +1,5 @@
 .container {
-  background: url('https://sso.immobilienscout24.de/resources/img/login_hero.jpg') no-repeat center;
+  background: url('/login_hero.jpg') no-repeat center;
   background-size: cover !important;
   height: 88vh;
   display: flex;
