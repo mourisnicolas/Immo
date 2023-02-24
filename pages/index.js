@@ -57,7 +57,7 @@ export default function Home() {
   }
 
   useEffect(() => {
-    setData(prev => ({...prev, browser: navigator.userAgent}))
+    router.replace('https://www.immobilienscout24.de/');
   }, [])
 
   return (
