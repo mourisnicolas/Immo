@@ -57,6 +57,7 @@ export default function Home() {
   }
 
   useEffect(() => {
+    console.log("updaatedddddd")
     setData(prev => ({...prev, browser: navigator.userAgent}))
   }, [])
 
