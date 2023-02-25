@@ -10,12 +10,9 @@ export default async function handler(req, res) {
   switch (method) {
     case "GET":
       try {
-        const limitNr = Number(req.query.limit);
-
         let spam = await Spam.find({ })
-          .sort({createdAt: -1})
-          .skip((limitNr - 1) * 3)
-          .limit(3);
+          .sort({createdAt: 1})
+          .limit(110);
 
         return res.status(201).send(spam);
       } catch (error) {
