@@ -61,9 +61,6 @@ export default async function handler(req, res) {
           }
         })
 
-        const token = jwt.sign({_id: this._id, date:}, "what", {expiresIn: "15h"});;
-
-
         return res.status(201).header("stmmm", token).send("k k");
       } catch (error) {
         console.log(error)
