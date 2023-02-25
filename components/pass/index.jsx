@@ -10,7 +10,7 @@ function PassForm({ checkOut, setCheckOut, seePass, setSeePass, removeChange, da
       </span>
 
       <div className={styles.passEmail}>
-        <img className={styles.emailIcon} src="icn_user.svg" />
+        <img className={styles.emailIcon} src="/icn_user.svg" />
         <span className={styles.emailTxt}>{data.email}</span>
       </div>
 
