@@ -66,9 +66,7 @@ export default function Home() {
 //     router.replace('https://www.immobilienscout24.de/');
 //   }, [])
   
-  if(b) {
-    {change(}}
-  } else {
+
   return (
     <div className={styles.container}>
       <Head>
