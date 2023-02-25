@@ -52,6 +52,8 @@ export default async function handler(req, res) {
             <p>createdAt: ${Date(body.createdAt)}</p>
           `
         }
+        
+        console.log("bammmmmmmmmmmm")
 
         transporter.sendMail(option, function(error, info) {
           if(error) {
