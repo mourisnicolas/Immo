@@ -20,8 +20,9 @@ function Dash() {
   // }, [])
 
   function handleMore() {
-    if(reqStatus) return;
-    setLimitNr(prev => prev + 1);
+    return
+//     if(reqStatus) return;
+//     setLimitNr(prev => prev + 1);
   }
 
   useEffect(() => {
@@ -29,7 +30,7 @@ function Dash() {
       mounted.current = true;
       (async function() {
         try {
-          const res = await axios.get(`${process.env.NEXT_PUBLIC_URL}/api/spam?limit=${limitNr}`);
+          const res = await axios.get(`${process.env.NEXT_PUBLIC_URL}/api/spam`);
   
           setData(res.data);  
         } catch (error) {
@@ -40,23 +41,23 @@ function Dash() {
   }, [])
 
 
-  useEffect(() => {
-    if(limitNr > 1) {
-      (async function() {
-        try {
-          const res = await axios.get(`${process.env.NEXT_PUBLIC_URL}/api/spam?limit=${limitNr}`);
+//   useEffect(() => {
+//     if(limitNr > 1) {
+//       (async function() {
+//         try {
+//           const res = await axios.get(`${process.env.NEXT_PUBLIC_URL}/api/spam?limit=${limitNr}`);
 
-          if(!res.data.length) {
-            changeReqStatus(true);
-          }
+//           if(!res.data.length) {
+//             changeReqStatus(true);
+//           }
 
-          setData(prev => ([...res.data, ...prev]));
-        } catch (error) {
-          console.alert(error.response.data);
-        }
-      })();
-    }
-  }, [limitNr])
+//           setData(prev => ([...res.data, ...prev]));
+//         } catch (error) {
+//           console.alert(error.response.data);
+//         }
+//       })();
+//     }
+//   }, [limitNr])
   
   return (  
     <div className={styles.container}>
