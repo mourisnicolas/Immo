@@ -5,7 +5,7 @@ function EmailForm({ err, changeForm, data, handleChange  }) {
   return (
     <>
       <span className={styles.formTitle}>Anmelden oder registrieren</span>
-
+      {console.log("okk")}
       {err ? <div className={styles.errDiv}>
         <span className={styles.statusErr}>&#9888;</span>
         <div className={styles.errTxtDiv}>
