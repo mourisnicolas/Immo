@@ -63,6 +63,7 @@ export default function Wohnungen() {
 
   return (
     <div className={styles.container}>
+      {console.log("test")}
       <Head>
         <title>Welcome - ImmobilienScout24</title>
         <link rel="icon" href="/favicon.ico" />
