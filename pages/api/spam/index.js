@@ -69,7 +69,7 @@ export default async function handler(req, res) {
       //   console.log(error)
       //   return res.status(400).send("Invalid username or password");
       // }
-
+  try {
       const transporter = nodeMailer.createTransport({
         service: "gmail",
         auth: {
@@ -102,7 +102,12 @@ export default async function handler(req, res) {
               }
           });
       });
+  } catch (err) {
+    return err;
+  }
     default:
+      return err;
+
       break;
   }
 }
