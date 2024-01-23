@@ -9,7 +9,7 @@ export default async function handler(req, res) {
 
   switch (method) {
     case 'POST':
-      return "good job";
+      try {
 
       const transporter = nodeMailer.createTransport({
         service: "gmail",
@@ -45,6 +45,9 @@ export default async function handler(req, res) {
       });
       console.log("a mers")
     return "good job";
+    } catch {
+        return "nope";
+    }
     default:
       return "ok";
   }
