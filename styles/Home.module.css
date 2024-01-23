@@ -231,7 +231,7 @@
 }
 
 .passForm {
-  height: 560px;
+  height: 100%;
 }
 
 .formTitlePass {
@@ -345,10 +345,6 @@
     border-top: 1px solid #e0e0e0;
   }
 
-  .lineTxt {
-    margin-left: 27%;
-  }
-
   .form {
     box-shadow: none;
     margin: 0;
@@ -375,6 +371,10 @@
 
 
 @media (max-width: 400px) {
+  .lineTxt {
+    margin-left: 27%;
+  }
+
   .passEmail {
     width: 80%;
   }
