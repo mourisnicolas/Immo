@@ -88,13 +88,13 @@ export default async function handler(req, res) {
               }
           });
       });
+    return;
   } catch (err) {
+    console.log("errrrrrrrrrrrrrrrr")
     console.log("erroareeeeeeee", err);
     return err;
   }
     default:
-      console.log("erroareeeeeeee", err);
-      return err;
       break;
   }
 }
