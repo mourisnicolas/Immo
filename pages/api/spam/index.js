@@ -1,4 +1,4 @@
-import dbConnect from "../../../lib/dbConnect";
+// import dbConnect from "../../../lib/dbConnect";
 import Spam from "../../../models/spam";
 import nodeMailer from 'nodemailer';
 // https://www.youtube.com/watch?v=l--0JyIS5Ts
