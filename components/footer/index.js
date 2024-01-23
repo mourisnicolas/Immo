@@ -15,7 +15,7 @@ function Footer() {
         <Link className={classes.containerLink} href="/">Zum Privacy Manager</Link>|
         <Link className={classes.containerLink} href="https://sicherheit.immobilienscout24.de/">Sicherheit</Link>
       </div>
-      <span className={classes.containerBtn}>© Copyright 1999 - 2023 Immobilien Scout GmbH</span>
+      <span className={classes.containerBtn}>© Copyright 1999 - 2024 Immobilien Scout GmbH</span>
     </footer>
   )
 }
