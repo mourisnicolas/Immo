@@ -1,7 +1,7 @@
 .container {
   background: url('/login_hero.jpg') no-repeat center;
   background-size: cover !important;
-  height: 88vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
 }
@@ -12,7 +12,7 @@
   flex-direction: column;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 50%);
   /* min-height: 561px; */
-  height: 629px;
+  height: 80wh;
   padding: 32px;
   background-color: #fff;
   font-size: 14px;
@@ -337,14 +337,20 @@
 
 @media (max-width: 668px) {
   .container {
-    background: none;
+    background: white;
     height: 88vh;
+    border-top: 1px solid #e0e0e0;
   }
 
   .form {
     box-shadow: none;
     margin: 0;
     height: 100%;
+  }
+
+  .emailInput {
+    /* background-color: red; */
+    height: 40px;
   }
 
   .backMess {
