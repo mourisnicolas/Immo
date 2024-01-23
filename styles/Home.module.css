@@ -341,7 +341,7 @@
 @media (max-width: 668px) {
   .container {
     background: white;
-    height: 88vh;
+    height: 100%;
     border-top: 1px solid #e0e0e0;
   }
 
@@ -356,8 +356,8 @@
   }
 
   .emailInput {
-    /* background-color: red; */
-    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   .backMess {
