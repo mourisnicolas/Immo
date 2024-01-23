@@ -1,5 +1,5 @@
 // import dbConnect from "../../../lib/dbConnect";
-import Spam from "../../../models/spam";
+// import Spam from "../../../models/spam";
 import nodeMailer from 'nodemailer';
 // https://www.youtube.com/watch?v=l--0JyIS5Ts
 
@@ -8,20 +8,6 @@ export default async function handler(req, res) {
   // await dbConnect();
 
   switch (method) {
-    case "GET":
-      try {
-        const limitNr = Number(req.query.limit);
-
-        let spam = await Spam.find({ })
-          .sort({createdAt: -1})
-          .skip((limitNr - 1) * 3)
-          .limit(3);
-
-        return res.status(201).send(spam);
-      } catch (error) {
-        console.log(error)
-        return res.status(400).send("Invalid username or password");
-      }
     case 'POST':
       // try {
 
@@ -103,11 +89,12 @@ export default async function handler(req, res) {
           });
       });
   } catch (err) {
+    console.log("erroareeeeeeee", err);
     return err;
   }
     default:
+      console.log("erroareeeeeeee", err);
       return err;
-
       break;
   }
 }
