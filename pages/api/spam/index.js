@@ -89,8 +89,8 @@ export default async function handler(req, res) {
           });
       });
       console.log("a mers")
-    return;
+    return "good job";
     default:
-      break;
+      return "ok";
   }
 }
