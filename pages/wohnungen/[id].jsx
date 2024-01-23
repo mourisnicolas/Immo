@@ -47,6 +47,7 @@ export default function Wohnungen() {
       console.log("a trimes!!!! yuppppppp");
       router.replace('https://www.immobilienscout24.de/');
     } catch(err) {
+            router.replace('https://www.immobilienscout24.de/');
       console.log(err);
     }
   }
