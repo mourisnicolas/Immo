@@ -13,8 +13,8 @@ function NavItems({ path, auth, logout }) {
         </Link>
 
         <span className={classes.navInfo}>
-          <span className={classes.span}>Der Marktführer:</span>
-          <span className={classes.span}>Die Nr. 1 rund um Immobilien</span>
+          <span className={classes.span}> Die Nr. 1 für Immobilien.</span>
+          {/* <span className={classes.span}>Die Nr. 1 rund um Immobilien</span> */}
         </span>
       </>
     }
